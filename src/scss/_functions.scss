@@ -1,0 +1,18 @@
+// @mixin sizes($prefix, $property, $count, $from, $ext) {
+//   @for $var from 0 to $count {
+//     $calc: $from/($var+1);
+//     #{selector-unify(&, $prefix+$calc)} {
+//       $property: $from/$var + $ext;
+//     }
+//   }
+// }
+
+@mixin size($operand, $ext: "%", $from: 100) {
+  width: $from / $operand + $ext;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

@@ -1,1 +1,6 @@
+$border-radius: 5px;
 
+/* Colors */
+$primary-color: #473090;
+$shade-color: lighten($primary-color, 10%);
+$tint-color: darken($primary-color, 10%);
