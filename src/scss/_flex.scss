@@ -33,6 +33,12 @@ div {
   &.w75 {
     width: 75%;
   }
+  &.w70 {
+    width: 70%;
+  }
+  &.w66 {
+    width: 66.6%;
+  }
   &.w50 {
     width: 50%;
   }
@@ -76,6 +82,9 @@ div {
       margin-right: 15px;
       &__left {
         margin-left: 15px;
+      }
+      &__right {
+        margin-right: 15px;
       }
     }
   }
