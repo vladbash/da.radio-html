@@ -11,8 +11,7 @@
 
 <body>
     <div class="wrapper row align-center">
-        <div class="player column w75 card"
-            style="background:linear-gradient(rgba(90, 61, 182, 0.2), rgba(52, 35, 106, 0.1));">
+        <div class="player column w75 card">
             <div class="player__top p15__y w100 column">
                 <div class="player__header row w100">
                     <div class="player__header__logo half w33 row align-center valign-center">
@@ -37,21 +36,21 @@
                             <div class="player__controls__back w33 control align-center valign-center">
                                 <div>
                                     <svg>
-                                        <use xlink:href="#back"></use>
+                                        <use xlink:href="#like"></use>
                                     </svg>
                                 </div>
                             </div>
                             <div class="player__controls__deal--pause w33 control align-center valign-cente">
                                 <div>
                                     <svg>
-                                        <use xlink:href="#pause"></use>
+                                        <use xlink:href="#mute"></use>
                                     </svg>
                                 </div>
                             </div>
                             <div class="player__controls__forward w33 control align-center valign-center">
                                 <div>
                                     <svg>
-                                        <use xlink:href="#forward"></use>
+                                        <use xlink:href="#volume"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -72,7 +71,10 @@
                 </div>
             </div>
             <div class="player__list p15__y column">
-                <div class="player__list__item row w100 m30__x m15__y">
+                <div class="player__list__item row m30__x m15__y">
+                    <div class="player__list__item__position">
+                        <span class="player__list__item__position__label">1.</span>
+                    </div>
                     <div class="player__list__item__image card round-shadowed">
                         <img src="../assets/images/metallica.jpg" class="round" alt="Metallica">
                     </div>
@@ -82,35 +84,119 @@
                                 Now That We're Dead
                             </h4>
                         </div>
-                        <div class="player__list__item__singer">Metallica</div>
+                        <div class="player__list__item__singer">
+                            Metallica
+                        </div>
+                        <div class="player__list__item__meta">
+                            <span>4:00</span>
+                        </div>
+                        <div class="player__list__item__meta">
+                            <span>Added by Test Test</span>
+                        </div>
+                    </div>
+                    <div class="player__list__item__likes">
+                        <span class="player__list__item__likes__amount">100</span>
+                        <div class="player__controls__back w33 control align-center player__list__item__likes__icon">
+                            <div>
+                                <svg>
+                                    <use xlink:href="#like-outline" fill-rule="nonzero"></use>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="player__list__item row w100 m30__x m15__y">
-                    <div class="player__list__item__image card round-shadowed">
-                        <img src="../assets/images/metallica.jpg" class="round" alt="Metallica">
-                    </div>
-                    <div class="player__list__item_info w75 p15__x column">
-                        <div class="player__list__item__song">
-                            <h4>
-                                Now That We're Dead
-                            </h4>
+                <div class="player__list__item row m30__x m15__y">
+                        <div class="player__list__item__position">
+                            <span class="player__list__item__position__label">2.</span>
                         </div>
-                        <div class="player__list__item__singer">Metallica</div>
-                    </div>
+                        <div class="player__list__item__image card round-shadowed">
+                            <img src="../assets/images/119044581.jpg" class="round" alt="David Bowie">
+                        </div>
+                        <div class="player__list__item_info w75 p15__x column">
+                            <div class="player__list__item__song">
+                                <h4>
+                                    Fame
+                                </h4>
+                            </div>
+                            <div class="player__list__item__singer">
+                                David Bowie
+                            </div>
+                            <div class="player__list__item__meta">
+                                <span>3:50</span>
+                            </div>
+                            <div class="player__list__item__meta">
+                                <span>Added by Awesome User</span>
+                            </div>
+                        </div>
+                        <div class="player__list__item__likes">
+                            <span class="player__list__item__likes__amount">52</span>
+                            <div class="player__controls__back w33 control align-center player__list__item__likes__icon">
+                                <div>
+                                    <svg>
+                                        <use xlink:href="#like" fill-rule="nonzero"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div style="display: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" id="back" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M4 2v20h-2v-20h2zm18 0l-16 10 16 10v-20z" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="forward" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M20 22v-20h2v20h-2zm-18 0l16-10-16-10v20z" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="play" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M2 24v-24l20 12-20 12z" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="pause" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M10 24h-6v-24h6v24zm10-24h-6v24h6v-24z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="mute" fill="#473090" width="24" height="24"
+            viewBox="0 0 489.9 489.9" style="enable-background:new 0 0 489.9 489.9;" xml:space="preserve">
+            <g>
+                <g>
+                    <path
+                        d="M268.9,70.25c-4.9,0-9.8,1.3-14.2,3.8c-0.3,0.2-0.6,0.3-0.8,0.5l-100.1,69.2H73.3c-40.4,0-73.3,32.9-73.3,73.3v55.6
+                        c0,40.4,32.9,73.3,73.3,73.3h84.5l95.9,69.2c0.3,0.2,0.7,0.5,1,0.7c4.3,2.5,9.2,3.8,14.2,3.8l0,0c7.4,0,14.4-2.8,19.7-7.9
+                        c5.6-5.4,8.7-12.6,8.7-20.4V98.65C297.3,82.95,284.6,70.25,268.9,70.25z M272.8,391.25c0,1.1-0.4,2-1.1,2.8
+                        c-0.7,0.7-1.8,1.1-2.7,1.1c-0.5,0-1-0.1-1.5-0.3l-98.4-71.1c-2.1-1.5-4.6-2.3-7.2-2.3H73.3c-26.9,0-48.8-21.9-48.8-48.8v-55.6
+                        c0-26.9,21.9-48.8,48.8-48.8h84.3c2.5,0,4.9-0.8,7-2.2l102.7-71c0.5-0.3,1.1-0.4,1.6-0.4c1.6,0,3.9,1.2,3.9,3.9V391.25z" />
+                    <path d="M486.1,171.35c-4.8-4.8-12.5-4.8-17.3,0l-56.3,56.3l-56.3-56.3c-4.8-4.8-12.5-4.8-17.3,0c-4.8,4.8-4.8,12.5,0,17.3
+                        l56.3,56.3l-56.3,56.3c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l56.3-56.3l56.3,56.3
+                        c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-56.5-56.3l56.3-56.3C490.8,183.85,490.8,176.15,486.1,171.35z
+                        " />
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="volume" fill="#473090" width="24" height="24"
+            viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;" xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M361.1,337.6c2.2,1.5,4.6,2.3,7.1,2.3c3.8,0,7.6-1.8,10-5.2c18.7-26.3,28.5-57.4,28.5-89.9s-9.9-63.6-28.5-89.9
+                        c-3.9-5.5-11.6-6.8-17.1-2.9c-5.5,3.9-6.8,11.6-2.9,17.1c15.7,22.1,24,48.3,24,75.8c0,27.4-8.3,53.6-24,75.8
+                        C354.3,326.1,355.6,333.7,361.1,337.6z" />
+                    <path d="M425.4,396.3c2.2,1.5,4.6,2.3,7.1,2.3c3.8,0,7.6-1.8,10-5.2c30.8-43.4,47.1-94.8,47.1-148.6s-16.3-105.1-47.1-148.6
+                        c-3.9-5.5-11.6-6.8-17.1-2.9c-5.5,3.9-6.8,11.6-2.9,17.1c27.9,39.3,42.6,85.7,42.6,134.4c0,48.6-14.7,95.1-42.6,134.4
+                        C418.6,384.7,419.9,392.3,425.4,396.3z" />
+                    <path
+                        d="M254.7,415.7c4.3,2.5,9.2,3.8,14.2,3.8l0,0c7.4,0,14.4-2.8,19.7-7.9c5.6-5.4,8.7-12.6,8.7-20.4V98.5
+                        c0-15.7-12.7-28.4-28.4-28.4c-4.9,0-9.8,1.3-14.2,3.8c-0.3,0.2-0.6,0.3-0.8,0.5l-100.1,69.2H73.3C32.9,143.6,0,176.5,0,216.9v55.6
+                        c0,40.4,32.9,73.3,73.3,73.3h84.5l95.9,69.2C254,415.3,254.4,415.5,254.7,415.7z M161.8,321.3H73.3c-26.9,0-48.8-21.9-48.8-48.8
+                        v-55.6c0-26.9,21.9-48.8,48.8-48.8h84.3c2.5,0,4.9-0.8,7-2.2l102.7-71c0.5-0.3,1.1-0.4,1.6-0.4c1.6,0,3.9,1.2,3.9,3.9v292.7
+                        c0,1.1-0.4,2-1.1,2.8c-0.7,0.7-1.8,1.1-2.7,1.1c-0.5,0-1-0.1-1.5-0.3l-98.4-71.1C166.9,322.1,164.4,321.3,161.8,321.3z" />
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="like" fill="#473090" width="24" height="24"
+            viewBox="0 0 51.997 51.997" style="enable-background:new 0 0 51.997 51.997;" xml:space="preserve">
+            <path d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905
+            c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478
+            c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014
+            C52.216,18.553,51.97,16.611,51.911,16.242z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="like-outline" fill="#473090" width="24" height="24"
+            viewBox="0 0 51.997 51.997" style="enable-background:new 0 0 51.997 51.997;" xml:space="preserve">
+            <path d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905
+		c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478
+		c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014
+		C52.216,18.553,51.97,16.611,51.911,16.242z M49.521,21.261c-0.984,4.172-3.265,7.973-6.59,10.985L25.855,47.481L9.072,32.25
+		c-3.331-3.018-5.611-6.818-6.596-10.99c-0.708-2.997-0.417-4.69-0.416-4.701l0.015-0.101C2.725,9.139,7.806,3.826,14.158,3.826
+		c4.687,0,8.813,2.88,10.771,7.515l0.921,2.183l0.921-2.183c1.927-4.564,6.271-7.514,11.069-7.514
+		c6.351,0,11.433,5.313,12.096,12.727C49.938,16.57,50.229,18.264,49.521,21.261z" />
+        </svg>
         <script src="script.js"></script>
     </div>
 </body>
