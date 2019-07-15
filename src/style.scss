@@ -27,6 +27,10 @@ body {
 }
 
 .search {
+    &-icon {
+        height: 24px;
+        width: 36px;
+    }
     &-block {
         min-height: 65px;
     }
