@@ -3,7 +3,7 @@
 @import "./scss/flex";
 
 body {
-    background: rgb(250, 245, 254);
+    background: rgba(250, 245, 254, 0.3);
 }
 
 .control {
@@ -24,6 +24,29 @@ body {
     @media screen and (min-width: 820px) and (max-width: 1200px) {
       max-width: 100vw;
   }
+}
+
+.search {
+    &-block {
+        min-height: 65px;
+    }
+    &-container {
+        padding: 10px 15px;
+        border: 1px solid rgba($primary-color, 0.3);
+        border-radius: 6px;
+    }
+
+    &-input {
+        width: 100%;
+        height: 25px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: $primary-color;
+        &::placeholder {
+            color: rgba($primary-color, 0.65);
+        }
+    }
 }
 
 .round {

@@ -88,6 +88,13 @@ div {
       }
     }
   }
+  &.m5 {
+    margin: 5px;
+    &__y {
+      // margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
   &.p15 {
     padding: 15px;
     &__y {
@@ -95,6 +102,15 @@ div {
     }
     &__x {
       padding: 0 15px;
+    }
+  }
+  &.p5 {
+    padding: 5px;
+    &__y {
+      padding: 5px 0;
+    }
+    &__x {
+      padding: 0 5px;
     }
   }
   &.m5 {
